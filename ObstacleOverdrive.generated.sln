@@ -1,0 +1,36 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.5.002.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Intermediate", "Intermediate", "{D2C31575-D895-4075-BFD1-13544DB8D773}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{7079C4E3-7C3C-47BB-8403-82FFD44C2010}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BuildRulesProjects", "BuildRulesProjects", "{256F676F-98D2-4989-BA15-8A1912143D4B}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ObstacleOverdriveModuleRules", "Intermediate\Build\BuildRulesProjects\ObstacleOverdriveModuleRules\ObstacleOverdriveModuleRules.csproj", "{E438474F-7BD4-495B-9261-C810B834916A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E438474F-7BD4-495B-9261-C810B834916A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E438474F-7BD4-495B-9261-C810B834916A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E438474F-7BD4-495B-9261-C810B834916A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E438474F-7BD4-495B-9261-C810B834916A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{7079C4E3-7C3C-47BB-8403-82FFD44C2010} = {D2C31575-D895-4075-BFD1-13544DB8D773}
+		{256F676F-98D2-4989-BA15-8A1912143D4B} = {7079C4E3-7C3C-47BB-8403-82FFD44C2010}
+		{E438474F-7BD4-495B-9261-C810B834916A} = {256F676F-98D2-4989-BA15-8A1912143D4B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4134BE8B-70AC-4096-9C46-ED4B41DF8E85}
+	EndGlobalSection
+EndGlobal

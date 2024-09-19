@@ -1,0 +1,613 @@
+{
+	"folders": [
+		{
+			"name": "ObstacleOverdrive",
+			"path": "."
+		},
+		{
+			"name": "UE5",
+			"path": "E:\\Unreal\\UE_5.4"
+		}
+	],
+	"settings": {
+		"typescript.tsc.autoDetect": "off",
+		"npm.autoDetect": "off"
+	},
+	"extensions": {
+		"recommendations": [
+			"ms-vscode.cpptools",
+			"ms-dotnettools.csharp"
+		]
+	},
+	"tasks": {
+		"version": "2.0.0",
+		"tasks": [
+			{
+				"label": "ObstacleOverdrive Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ObstacleOverdrive",
+					"Win64",
+					"Debug",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdrive Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ObstacleOverdrive",
+					"Win64",
+					"Debug",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ObstacleOverdrive Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdrive Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ObstacleOverdrive",
+					"Win64",
+					"Debug",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdrive Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ObstacleOverdrive",
+					"Win64",
+					"DebugGame",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdrive Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ObstacleOverdrive",
+					"Win64",
+					"DebugGame",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ObstacleOverdrive Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdrive Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ObstacleOverdrive",
+					"Win64",
+					"DebugGame",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdrive Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ObstacleOverdrive",
+					"Win64",
+					"Development",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdrive Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ObstacleOverdrive",
+					"Win64",
+					"Development",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ObstacleOverdrive Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdrive Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ObstacleOverdrive",
+					"Win64",
+					"Development",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdrive Win64 Test Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ObstacleOverdrive",
+					"Win64",
+					"Test",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdrive Win64 Test Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ObstacleOverdrive",
+					"Win64",
+					"Test",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ObstacleOverdrive Win64 Test Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdrive Win64 Test Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ObstacleOverdrive",
+					"Win64",
+					"Test",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdrive Win64 Shipping Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ObstacleOverdrive",
+					"Win64",
+					"Shipping",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdrive Win64 Shipping Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ObstacleOverdrive",
+					"Win64",
+					"Shipping",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ObstacleOverdrive Win64 Shipping Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdrive Win64 Shipping Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ObstacleOverdrive",
+					"Win64",
+					"Shipping",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdriveEditor Win64 Debug Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ObstacleOverdriveEditor",
+					"Win64",
+					"Debug",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdriveEditor Win64 Debug Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ObstacleOverdriveEditor",
+					"Win64",
+					"Debug",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ObstacleOverdriveEditor Win64 Debug Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdriveEditor Win64 Debug Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ObstacleOverdriveEditor",
+					"Win64",
+					"Debug",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdriveEditor Win64 DebugGame Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ObstacleOverdriveEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdriveEditor Win64 DebugGame Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ObstacleOverdriveEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ObstacleOverdriveEditor Win64 DebugGame Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdriveEditor Win64 DebugGame Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ObstacleOverdriveEditor",
+					"Win64",
+					"DebugGame",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdriveEditor Win64 Development Build",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ObstacleOverdriveEditor",
+					"Win64",
+					"Development",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdriveEditor Win64 Development Rebuild",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Build.bat",
+				"args": [
+					"ObstacleOverdriveEditor",
+					"Win64",
+					"Development",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"dependsOn": [
+					"ObstacleOverdriveEditor Win64 Development Clean"
+				],
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"label": "ObstacleOverdriveEditor Win64 Development Clean",
+				"group": "build",
+				"command": "Engine\\Build\\BatchFiles\\Clean.bat",
+				"args": [
+					"ObstacleOverdriveEditor",
+					"Win64",
+					"Development",
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-waitmutex"
+				],
+				"problemMatcher": "$msCompile",
+				"type": "shell",
+				"options": {
+					"cwd": "E:\\Unreal\\UE_5.4"
+				}
+			}
+		]
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Launch ObstacleOverdrive (Debug)",
+				"request": "launch",
+				"program": "E:\\Unreal Projects\\ObstacleOverdrive\\Binaries\\Win64\\UnrealGame-Win64-Debug.exe",
+				"preLaunchTask": "ObstacleOverdrive Win64 Debug Build",
+				"args": [
+				],
+				"cwd": "E:\\Unreal\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Unreal\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch ObstacleOverdrive (DebugGame)",
+				"request": "launch",
+				"program": "E:\\Unreal Projects\\ObstacleOverdrive\\Binaries\\Win64\\UnrealGame-Win64-DebugGame.exe",
+				"preLaunchTask": "ObstacleOverdrive Win64 DebugGame Build",
+				"args": [
+				],
+				"cwd": "E:\\Unreal\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Unreal\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch ObstacleOverdrive (Development)",
+				"request": "launch",
+				"program": "E:\\Unreal Projects\\ObstacleOverdrive\\Binaries\\Win64\\UnrealGame.exe",
+				"preLaunchTask": "ObstacleOverdrive Win64 Development Build",
+				"args": [
+				],
+				"cwd": "E:\\Unreal\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Unreal\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch ObstacleOverdrive (Test)",
+				"request": "launch",
+				"program": "E:\\Unreal Projects\\ObstacleOverdrive\\Binaries\\Win64\\UnrealGame-Win64-Test.exe",
+				"preLaunchTask": "ObstacleOverdrive Win64 Test Build",
+				"args": [
+				],
+				"cwd": "E:\\Unreal\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Unreal\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch ObstacleOverdrive (Shipping)",
+				"request": "launch",
+				"program": "E:\\Unreal Projects\\ObstacleOverdrive\\Binaries\\Win64\\UnrealGame-Win64-Shipping.exe",
+				"preLaunchTask": "ObstacleOverdrive Win64 Shipping Build",
+				"args": [
+				],
+				"cwd": "E:\\Unreal\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Unreal\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch ObstacleOverdriveEditor (Debug)",
+				"request": "launch",
+				"program": "E:\\Unreal\\UE_5.4\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-Debug.exe",
+				"preLaunchTask": "ObstacleOverdriveEditor Win64 Debug Build",
+				"args": [
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject"
+				],
+				"cwd": "E:\\Unreal\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Unreal\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch ObstacleOverdriveEditor (DebugGame)",
+				"request": "launch",
+				"program": "E:\\Unreal\\UE_5.4\\Engine\\Binaries\\Win64\\UnrealEditor-Win64-DebugGame.exe",
+				"preLaunchTask": "ObstacleOverdriveEditor Win64 DebugGame Build",
+				"args": [
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject"
+				],
+				"cwd": "E:\\Unreal\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Unreal\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"name": "Launch ObstacleOverdriveEditor (Development)",
+				"request": "launch",
+				"program": "E:\\Unreal\\UE_5.4\\Engine\\Binaries\\Win64\\UnrealEditor.exe",
+				"preLaunchTask": "ObstacleOverdriveEditor Win64 Development Build",
+				"args": [
+					"E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject"
+				],
+				"cwd": "E:\\Unreal\\UE_5.4",
+				"stopAtEntry": false,
+				"console": "integratedTerminal",
+				"type": "cppvsdbg",
+				"visualizerFile": "E:\\Unreal\\UE_5.4\\Engine\\Extras\\VisualStudioDebugging\\Unreal.natvis",
+				"sourceFileMap": {
+					"D:\\build\\++UE5\\Sync": "E:\\Unreal\\UE_5.4"
+				}
+			},
+			{
+				"name": "Generate Project Files",
+				"type": "coreclr",
+				"request": "launch",
+				"preLaunchTask": "UnrealBuildTool Win64 Development Build",
+				"program": "E:\\Unreal\\UE_5.4\\Engine\\Build\\BatchFiles\\RunUBT.bat",
+				"args": [
+					"-projectfiles",
+					"-vscode",
+					"-project=E:\\Unreal Projects\\ObstacleOverdrive\\ObstacleOverdrive.uproject",
+					"-game",
+					"-engine",
+					"-dotnet"
+				],
+				"console": "integratedTerminal",
+				"stopAtEntry": false,
+				"cwd": "E:\\Unreal\\UE_5.4"
+			}
+		]
+	}
+}
